@@ -64,7 +64,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -304,7 +305,7 @@ body {
   text-transform: uppercase;
   padding: 0 0 0 30px;
   color: #000;
-  text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.33);
+  text-shadow: 3px 5px 10px rgba( 0, 0, 0, .33);
   background: url(../img/icons/steering-wheel.png) no-repeat;
 }
 
@@ -377,7 +378,7 @@ body {
     display: none;
   }
 
-  .test{
+  .test {
     margin: 40px 0 0;
   }
 
@@ -389,7 +390,6 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     max-width: 490px;
-    margin: 0 auto;
     padding: 0;
   }
 
@@ -463,7 +463,7 @@ body {
   .test__arrow {
     margin: 64px auto 0;
    }
- }
+  }
 
 @media (max-width: 375px) {
   .logo {
@@ -502,7 +502,7 @@ body {
 
   .btn__test {
     font-size: 13px;
-    background-color: #E51937;
+    background-color: #e51937;
     color: #fff;
     max-width: 160px;
   }
