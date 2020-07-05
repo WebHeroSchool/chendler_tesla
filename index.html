@@ -3,63 +3,98 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Tesla</title>
 </head>
 <body>
-	<header class="header">
-		<img src="img/Tesla-Wordmark-Red.png" alt="tesla_logo" class="logo">
-		<nav class="menu__row_main">
-			<a href="#" class="menu__item">Model S</a>
-			<a href="#" class="menu__item">Model X</a>
-			<a href="#" class="menu__item">Model 3</a>
-			<a href="#" class="menu__item">Roadster</a>
-			<a href="#" class="menu__item">Energy</a>
-		</nav>
-		<nav class="menu__row_left">
-			<a href="#" class="menu__item">Магазин</a>
-			<a href="#" class="menu__item">Войти</a>
-			<a href="#" class="menu__item"></a>
-		</nav>		
+
+ <header class="header">
+		<div class="header__container">
+			<div class="header__logo">
+				<img src="img/Tesla-Wordmark-Red.png" alt="tesla_logo" class="logo">
+	  	</div>
+			<nav class="header__menu">
+				<div class="menu__row">
+					<a href="#" class="menu__item">Model S</a>
+					<a href="#" class="menu__item">Model X</a>
+					<a href="#" class="menu__item">Model 3</a>
+					<a href="#" class="menu__item">Roadster</a>
+					<a href="#" class="menu__item">Energy</a>
+				</div>	
+			</nav>
+			<nav class="header__rigth">
+				<div class="header__right_row">
+					<a href="#" class="menu__item">Магазин</a>
+					<a href="#" class="menu__item">Войти</a>
+					<a href="#" for="check-menu">
+					<input type="checkbox" id="check-menu" class="check-menu">
+						<div class="header__burger">
+							<div class="burger-line first"></div>
+							<div class="burger-line second"></div>
+							<div class="burger-line third"></div>
+						</div>
+					</a>
+				</div>
+			</nav>
+		</div>	 
 	</header>
 	<main>
 
 		<div class="banner">
 			<h1 class="main-title">Model S</h1>
-			<div class="banner__text"></div>
-			<!-- надпись хочу сделать фоном -->
-			<img src="img/tesla-png-tesla-png-hd-1636.png" alt="model S">
+			<p class="banner__text">Добро пожаловать в будущее!</p>
+			<div class="banner__img_cover">
+				<img src="img/Tesla logo + car.jpg" alt="car&logo" class="banner__img">
+			</div>
 		</div>
 
 		<div class="test">
 			<div class="test__row">
-				<div class="test__column">
-					<div class="test__item">
-						<!-- кратинку хочу фоном -->
-						<div class="test__body">2,7<span class="test__body_small">сек</span></div>
+				<div class="test__row_right">
+					<div class="test__column">
+						<div class="test__item">
+							<div class="test__right">
+								<img src="img/icons/speed.svg" alt="speedmeter" class="test__img test__img_speed">
+							</div>	
+							<div class="test__left">
+								<div class="test__body">2,7<span class="test__body_small">сек</span></div>
+								<div class="test__body_bottom">0-100 км/час</div>
+							</div>	
+						</div>
+					</div>
+					<div class="test__column">
+						<div class="test__item">
+							<div class="test__right">
+								<img src="img/icons/Road icon.png" alt="road" class="test__img test__img_road">
+							</div>
+							<div class="test__left">
+								<div class="test__body">632<span class="test__body_small">км</span></div>
+								<div class="test__body_bottom">запас хода</div>
+							</div>	
+						</div>
 					</div>
 				</div>
-				<div class="test__column">
-					<div class="test__item">
-						<!-- кратинку хочу фоном -->
-						<div class="test__body">632<span class="test__body_small">км</span></div>
-					</div>
-				</div>
-				<div class="test__column">
-					<div class="test__item">
-						<!-- кратинку хочу фоном -->
+				<div class="test__row_left">	
+					<div class="test__column test__column_testdrive">
+						<a href="#" class="test__item link_test__item">
 						<div class="test__body_testdrive">тест драйв</div>
+						</a>
 					</div>
-				</div>
-				<div class="test__column">
-					<div class="test__item">
-						<a href="#" class="btn test___body">заказать</a>
+					<div class="test__column test__column_button">
+						<div class="test__item">
+							<a href="#" class="btn btn__test">заказать</a>
+						</div>
 					</div>
-				</div>
+				</div>	
 			</div>
-			<img src="img/icons/arrow.svg" alt="arrow" class="test__arrow">
+			<div class="test__arrow">
+			<a href="#future" class="link__arrow">	
+				<img src="img/icons/arrow.svg" alt="arrow" class="test__arrow_img">
+			</a>
+			</div>	
 		</div>
 
-		<div class="future">
+		<!-- <div class="future" id="future">
 			<div class="future__row">
 				<div class="future__img__column">
 					<div class="img__title">Model S</div>
@@ -143,7 +178,7 @@
 					<img src="img/Tesla-Wordmark-Red (1).png" alt="tesla_title">
 				</div>					
 			</div>
-		</div>
+		</div> -->
 	</main>
 	</body>
 </html>
