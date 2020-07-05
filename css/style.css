@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-/*Обнуление*/ 
-
+/* Обнуление*/
 @import url(../fonts/font.css);
 
 * {
@@ -24,7 +23,7 @@
 }
 
 a:focus,
-a:active{
+a:active {
   outline: none;
 }
 
@@ -39,7 +38,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
   line-height: 1;
   font-size: 14px;
   -ms-text-size-adjust: 100%;
@@ -66,8 +64,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a,
-a:visited {
+a, a:visited {
   text-decoration: none;
 }
 
@@ -93,7 +90,7 @@ h6 {
   font-weight: inherit;
 }
 
-/*--------------------*/ 
+/* --------------------*/
 
 body {
   margin: 0 auto;
@@ -145,7 +142,7 @@ body {
   padding: 0 6px 0;
 }
 
-.menu__row .menu__item:first-child{
+.menu__row .menu__item:first-child {
   border-bottom: 2px solid #e51937;
   color: #e51937;
   display: block;
@@ -168,8 +165,8 @@ body {
 }
 
 .header__right_row .menu__item {
-    margin: 0 30px 0 0;
-  }
+  margin: 0 30px 0 0;
+}
 
 .check-menu {
   display: none;
@@ -218,18 +215,18 @@ body {
   text-align: center;
 }
 
-  .banner__img_cover{
-    max-width: 1218px;
-    margin: 0 auto;
-  }
+.banner__img_cover {
+  max-width: 1218px;
+  margin: 0 auto;
+}
 
-  .banner__img{
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
-  }
+.banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
 
-.test{
+.test {
   margin: 30px auto 0;
 }
 
@@ -283,9 +280,6 @@ body {
   padding: 10px 0 0;
 }
 
-.link_test__item {
-}
-
 .test__body {
   font-weight: 600;
   font-size: 35px;
@@ -310,7 +304,7 @@ body {
   text-transform: uppercase;
   padding: 0 0 0 30px;
   color: #000;
-  text-shadow: 3px 5px 10px rgba(0,0,0,0.33);
+  text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.33);
   background: url(../img/icons/steering-wheel.png) no-repeat;
 }
 
@@ -320,7 +314,7 @@ body {
   -o-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
   background: url(../img/icons/steering-wheel_red.png) no-repeat;
-  }
+}
 
 .btn {
   width: 160px;
@@ -378,10 +372,10 @@ body {
     justify-content: flex-end;
   }
 
-  .menu__item, .menu__row .menu__item:first-child {
+  .menu__item,
+  .menu__row .menu__item:first-child {
     display: none;
   }
-
 
   .test{
     margin: 40px 0 0;
@@ -430,8 +424,10 @@ body {
     margin: 0;
   }
 
-  .test__body_testdrive{
+  .test__body_testdrive {
     background: url(../img/icons/steering-wheel_red.png) no-repeat;
+    font-size: 16px;
+    color: red;
   }
 
   .test__body {
@@ -464,10 +460,6 @@ body {
     height: 31px;
   }
 
-  .test__body_testdrive {
-    font-size: 16px;
-    color: red;
-  }
   .test__arrow {
     margin: 64px auto 0;
    }
