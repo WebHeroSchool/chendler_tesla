@@ -64,9 +64,9 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a,
 a:focus,
-a:visited {
+a,
+a:visited, {
   text-decoration: none;
 }
 
@@ -418,9 +418,9 @@ body {
     max-width: 418px;
   }
 
-  .test__item_left{
+  .test__item_left {
   justify-content: flex-end;
-}
+  }
 
   .test__column {
     -webkit-box-flex: 0;
