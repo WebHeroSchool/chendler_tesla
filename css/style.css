@@ -168,7 +168,7 @@ body {
   border-bottom: 2px solid #e51937;
   color: #e51937;
   display: block;
-  padding-bottom: 8px;
+  padding: 0 0 8px 0;
 }
 
 .check-menu {
@@ -370,7 +370,7 @@ body {
   width: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .header__right_row {
     display: -webkit-flex;
     display: -moz-flex;
@@ -478,6 +478,16 @@ body {
 
   .test__arrow {
     margin: 64px auto 0;
+  }
+}
+
+@media (max-width: 583px) {
+  .main-title {
+    font-size: 60px;
+  }
+
+  .test__body {
+    font-size: 40px;
   }
 }
 
