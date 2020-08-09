@@ -438,7 +438,6 @@ body {
   }
 
   .test__body_testdrive {
-
     background: url(../img/icons/steering-wheel_red.png) 0 8px no-repeat;
     font-size: 16px;
     color: red;
@@ -467,7 +466,6 @@ body {
   .test__column_button {
     padding: 0;
   }
-
 
   .test__img_road {
     width: 60px;
