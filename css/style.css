@@ -643,7 +643,7 @@ body {
     max-width: 305px;
   }
 
-.test__row{
+  .test__row {
     padding: 0;
   }
 
@@ -721,4 +721,5 @@ body {
 
   .test__arrow {
     margin: 44px auto 0;
-  }}
+  }
+}
