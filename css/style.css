@@ -370,7 +370,9 @@ body {
 }
 
 /* Future block */
-/*.future {
+
+/*
+.future {
   margin: 27px auto 0;
   max-width: 1440px;
   border: 1px solid;
@@ -455,7 +457,6 @@ body {
 .future__feature::nth-child(1){
   padding: 54px 0 0 0;
 }
-
 
 .feature__body_img {}
 .feature__body_subtitle {
@@ -612,7 +613,7 @@ body {
 }
 
 @media (max-width: 495px) {
-  .test__row{
+  .test__row {
     padding: 0 10px;
   }
 }
@@ -712,7 +713,7 @@ body {
     font-size: 11px;
   }
 
-  .btn__test{
+  .btn__test {
     max-width: 130px;
     font-size: 11px;
     max-height: 33px;
@@ -720,5 +721,4 @@ body {
 
   .test__arrow {
     margin: 44px auto 0;
-  }
-}
+  }}
