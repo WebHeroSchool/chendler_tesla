@@ -24,7 +24,7 @@
 
 a,
 a:focus,
-a:visited, {
+a:visited {
   text-decoration: none;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 .header {
-  padding: 24px 0 0 0;
+  padding: 26px 0 0;
 }
 
 .header__container {
@@ -157,7 +157,7 @@ body {
   display: flex;
   flex: 0 1 203px;
   justify-content: space-between;
-  padding: 0 15px 0;
+  padding: 0 15px 12px 0;
 }
 
 .header__right_row .menu__item {
@@ -168,6 +168,7 @@ body {
   border-bottom: 2px solid #e51937;
   color: #e51937;
   display: block;
+  padding: 0 0 8px 0;
 }
 
 .check-menu {
@@ -229,7 +230,7 @@ body {
 }
 
 .test {
-  margin: 30px auto 0;
+  margin: 44px auto 0;
 }
 
 .test .test__row {
@@ -247,7 +248,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 378px;
+  min-width: 387px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -282,14 +283,20 @@ body {
   padding: 10px 0 0;
 }
 
+.test__img_road {
+  margin: 0 15px 0 0;
+}
+
 .test__body {
   font-weight: 600;
   font-size: 35px;
-  margin: 0;
+  margin: 0 0 0 5px;
 }
 
 .test__body_small {
   font-size: 20px;
+  display: inline-block;
+  margin: 0 0 0 10px;
 }
 
 .test__body_bottom {
@@ -304,10 +311,10 @@ body {
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 0 0 30px;
+  padding: 7px 0 0 30px;
   color: #000;
   text-shadow: 3px 5px 10px rgba(0, 0, 0, .33);
-  background: url(../img/icons/steering-wheel.png) no-repeat;
+  background: url(../img/icons/steering-wheel.png) 0 8px no-repeat;
 }
 
 .test__body_testdrive:hover {
@@ -315,7 +322,11 @@ body {
   -webkit-transition: ease-in-out .5s;
   -o-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
-  background: url(../img/icons/steering-wheel_red.png) no-repeat;
+  background: url(../img/icons/steering-wheel_red.png) 0 8px no-repeat;
+}
+
+.test__column_button {
+  padding: 9px 0 0;
 }
 
 .btn {
@@ -328,8 +339,7 @@ body {
   font-size: 13px;
   text-align: center;
   text-transform: uppercase;
-  color: #e51937;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
 }
 
 .btn__test {
@@ -343,10 +353,6 @@ body {
   -webkit-transition: ease-in-out .5s;
   -o-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
-}
-
-.button {
-  margin: 5px 0 0;
 }
 
 .test__img {
@@ -363,7 +369,134 @@ body {
   width: 30px;
 }
 
-@media (max-width: 768px) {
+/* Future block */
+
+/*
+.future {
+  margin: 27px auto 0;
+  max-width: 1440px;
+  border: 1px solid;
+}
+
+.future__row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.future__img__column {}
+
+.img__title {
+  padding: 67px 0 0 80px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 85px;
+  color: #e51937;
+}
+
+.column_img {
+  padding: 50px 0 0 0;
+}
+
+.future__column {
+  width: 440px;
+  height: 900px;
+  background: #e51937;
+  padding: 51px 0 0 0;
+}
+
+.future__column_wrap{
+  max-width: 347px;
+  margin: 0 44px 0 49px;
+    display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
+.future__title {
+
+}
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #fff;
+  margin: 0 0 0 5px;
+}
+.future__text {
+  margin: 11px 0 0 5px;
+  max-width: 315px;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+}
+.future__feature {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.future__feature::nth-child(1){
+  padding: 54px 0 0 0;
+}
+
+.feature__body_img {}
+.feature__body_subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+  color: #FFFFFF;
+}
+.feature__subtitle_small {
+  font-size: 20px;
+  line-height: 24px;
+}
+.feature__body_description {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.future__body_img {}
+.future__footer {}
+.info-box {}
+.future__info {}
+.info {}
+.info__icon {}
+.more-info {}
+.btn {}
+.future_bnt {}
+*/
+
+/* Adaptive */
+
+@media (max-width: 910px) {
+  .menu__item,
+  .menu__row .menu__item:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
   .header__right_row {
     display: -webkit-flex;
     display: -moz-flex;
@@ -372,11 +505,6 @@ body {
     display: flex;
     width: 35px;
     justify-content: flex-end;
-  }
-
-  .menu__item,
-  .menu__row .menu__item:first-child {
-    display: none;
   }
 
   .test {
@@ -430,7 +558,7 @@ body {
   }
 
   .test__body_testdrive {
-    background: url(../img/icons/steering-wheel_red.png) no-repeat;
+    background: url(../img/icons/steering-wheel_red.png) 0 8px no-repeat;
     font-size: 16px;
     color: red;
   }
@@ -455,6 +583,10 @@ body {
     padding: 0;
   }
 
+  .test__column_button {
+    padding: 0;
+  }
+
   .test__img_road {
     width: 60px;
     height: 70px;
@@ -467,6 +599,28 @@ body {
 
   .test__arrow {
     margin: 64px auto 0;
+  }
+}
+
+@media (max-width: 583px) {
+  .main-title {
+    font-size: 60px;
+  }
+
+  .test__body {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 495px) {
+  .test__row {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 401px) {
+  .btn__test {
+    max-width: 180px;
   }
 }
 
@@ -489,8 +643,12 @@ body {
     max-width: 305px;
   }
 
+.test__row{
+    padding: 0;
+  }
+
   .test__row_right {
-    max-width: 284px;
+    min-width: 284px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -541,3 +699,26 @@ body {
     margin: 64px auto 0;
   }
 }
+
+@media (max-width: 311px) {
+  .test__row{
+    padding: 0 10px;
+  }
+
+  .test__body {
+    font-size: 20px;
+  }
+
+  .test__body_testdrive {
+    font-size: 11px;
+  }
+
+  .btn__test {
+    max-width: 130px;
+    font-size: 11px;
+    max-height: 33px;
+  }
+
+  .test__arrow {
+    margin: 44px auto 0;
+  }}
